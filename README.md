@@ -19,15 +19,35 @@ pip3 install hexson
 
 ### loader & dumpper
 
-````
+Serialize from / Deserialize to file:
+
+````python
 json_dict = hexson.load(fd)
-json_str = hexson.dump(json_dict, fd)
+hexson.dump(json_dict, fd)
+````
+
+Serialize from / Deserialize to string:
+
+````python
+json_dict = hexson.loads(json_string)
+json_string = hexson.dumps(json_dict)
+````
+
+Function `load` and `loads` will parse string in Json to *bytes* in Python by default.
+And you can convert it into string in Python by set parameter `utf_8_string` to `True`, just like:
+
+````python
+json_dict = hexson.load(fd, utf_8_string=True)
+json_dict = hexson.loads(json_string, utf_8_string=True)
 ````
 
 ### Elasticsearch serializer
 
-````
-es_conn = elasticsearch.Elasticsearch([{'host': cfg['es']['host'], 'port': cfg['es']['port']}],
-                                          http_auth=(cfg['es']['user'], cfg['es']['pass']),
-                                          timeout=60, serializer=hexson.JSONSerializer())
+Hexson can work along with official `elasticsearch` Python client library.
+
+````python
+import elasticsearch
+
+hexson_serializer = hexson.JSONSerializer()
+es_conn = elasticsearch.Elasticsearch(serializer=hexson_serializer)
 ````

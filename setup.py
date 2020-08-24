@@ -4,9 +4,9 @@ from os.path import join, dirname
 from setuptools import setup, find_packages
 
 
-VERSION = (0, 0, 4)
+VERSION = (0, 0, 5)
 __version__ = VERSION
-__versionstr__ = "0.0.4"
+__versionstr__ = "0.0.5"
 
 
 with open(join(dirname(__file__), "README.md")) as f:
@@ -27,9 +27,9 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     version=__versionstr__,
-    author="Qiushi Yang",
+    author="ManchurianClassmate",
     author_email="i@listenwhat.com",
-    maintainer="Qiushi Yang",
+    maintainer="ManchurianClassmate",
     maintainer_email="i@listenwhat.com",
     packages=find_packages(where="."),
     classifiers=[

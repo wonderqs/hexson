@@ -5,9 +5,9 @@ from .parser import Parser
 from .serializer import JSONSerializer
 
 
-VERSION = (0, 0, 3)
+VERSION = (0, 0, 5)
 __version__ = VERSION
-__versionstr__ = "0.0.3"
+__versionstr__ = "0.0.5"
 
 
 __all__ = [
