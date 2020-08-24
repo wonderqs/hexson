@@ -1,6 +1,8 @@
 # Hexson
 
-[![PyPI version](https://badge.fury.io/py/hexson@2x.png)](https://badge.fury.io/py/hexson)
+[![Python version](https://img.shields.io/pypi/pyversions/hexson.svg)](https://pypi.org/project/hexson)
+[![Build Status](https://travis-ci.org/wonderqs/hexson.svg?branch=master)](https://travis-ci.org/wonderqs/hexson)
+[![PyPI version](https://badge.fury.io/py/hexson.svg)](https://badge.fury.io/py/hexson)
 
 Json library designed for binary data processing.
 

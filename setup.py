@@ -4,9 +4,9 @@ from os.path import join, dirname
 from setuptools import setup, find_packages
 
 
-VERSION = (0, 0, 3)
+VERSION = (0, 0, 4)
 __version__ = VERSION
-__versionstr__ = "0.0.3"
+__versionstr__ = "0.0.4"
 
 
 with open(join(dirname(__file__), "README.rst")) as f:
