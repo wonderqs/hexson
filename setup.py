@@ -9,7 +9,7 @@ __version__ = VERSION
 __versionstr__ = "0.0.4"
 
 
-with open(join(dirname(__file__), "README.rst")) as f:
+with open(join(dirname(__file__), "README.md")) as f:
     long_description = f.read().strip()
 
 
