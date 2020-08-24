@@ -25,7 +25,7 @@ setup(
     license="Apache-2.0",
     url="https://github.com/wonderqs/hexson",
     long_description=long_description,
-    long_description_content_type="text/x-rst",
+    long_description_content_type="text/markdown",
     version=__versionstr__,
     author="Qiushi Yang",
     author_email="i@listenwhat.com",
